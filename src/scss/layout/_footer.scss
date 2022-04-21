@@ -1,0 +1,95 @@
+.footer {
+  background-color: #fff;
+  font-family: $font-secondary;
+  font-size: 14px;
+  padding-top: 30px;
+  padding-bottom: 45px;
+  border-top: 1px solid #b8b8b9;
+
+  @media (min-width: 768px) {
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 30px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      text-align: end;
+      width: 100%;
+      
+    }
+  }
+
+  &__copy {
+    color: $color-quart-text;
+    @media (min-width: 768px) {
+      order: -1;
+      position: absolute;
+      
+    }
+  }
+
+  &__list {
+    margin-top: 20px;
+
+    @media (min-width: 768px) {
+      margin-top: 0;
+      margin-left: 600px;
+    }
+    @media (min-width:1024px) {
+      margin-left: 900px;
+    }
+
+    & a {
+      text-decoration: none;
+      color: $color-principal-text;
+      text-transform: uppercase;
+    }
+  }
+
+  &__list-item {
+    margin-top: 3px;
+
+    @media (min-width: 768px) {
+      margin-top: 10px;
+    }
+  }
+
+  &__logo {
+    text-align: center;
+    margin-top: 30px;
+
+    @media (min-width: 768px) {
+      position: absolute;
+      order: -1;
+      text-align: start;
+      margin-top: 0;
+      
+    
+    }
+
+    & img {
+      width: 115px;
+      height: 45px;
+
+      @media (min-width: 768px) {
+        margin-top: 30px;
+        
+
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    padding-left: 138px;
+    padding-right: 138px;
+  }
+}

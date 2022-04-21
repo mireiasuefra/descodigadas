@@ -1,0 +1,51 @@
+/*PARTE DEL LEMA*/
+
+.slogan {
+  background-image:url(../images/computer.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  top: 60px;
+  z-index: -1;
+  width: 100%;
+  height: 300px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+}
+
+.slogan__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  transform: translate(0, -60px);
+  background-color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  width: 70%;
+  height: 15vh;
+  @media (min-width:768px) {
+    opacity: 0.75;
+    transform: translate(-70px, -40px);
+    width: 80%;
+    height: 40px;
+  }
+  
+  
+}
+
+.slogan__container--text {
+  font-weight: bold;
+  font-family: $font-secondary;
+  font-size: 18px;
+  padding-left: 25px;
+  padding-right: 10px;
+  
+    
+}
